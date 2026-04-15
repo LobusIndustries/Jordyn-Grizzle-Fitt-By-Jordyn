@@ -154,6 +154,34 @@ export default function Contact() {
                   </p>
                 </div>
               </div>
+
+              <div
+                className="flex items-start gap-4 p-5 rounded-xl"
+                style={{
+                  background: "rgba(200, 149, 108, 0.07)",
+                  border: "1px solid rgba(200, 149, 108, 0.2)",
+                }}
+              >
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
+                  style={{ background: "rgba(200, 149, 108, 0.15)", color: "#c8956c" }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <p style={{ fontSize: "0.72rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#c8956c", marginBottom: "0.15rem", fontWeight: 600 }}>
+                    Trainerize App
+                  </p>
+                  <p style={{ fontSize: "0.95rem", color: "#f5f0eb", fontWeight: 500, marginBottom: "0.3rem" }}>
+                    24/7 Access to Jordyn
+                  </p>
+                  <p style={{ fontSize: "0.78rem", color: "rgba(245, 240, 235, 0.5)", lineHeight: 1.6 }}>
+                    All clients train and communicate through Trainerize. Message Jordyn anytime — she&apos;ll get back to you ASAP.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 

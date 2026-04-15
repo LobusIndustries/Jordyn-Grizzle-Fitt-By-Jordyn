@@ -11,12 +11,12 @@ const services = [
     title: "One-on-One Coaching",
     subtitle: "In-Person Training",
     description:
-      "Train with Jordyn at your home or hers. Every session is completely personalized to your goals, fitness level, and schedule — with real-time coaching, form corrections, and full accountability.",
+      "Train with Jordyn in person at your home or hers. Every session is fully personalized to your goals, fitness level, and schedule — with hands-on coaching, real-time form corrections, and complete accountability. Programming is delivered through the Trainerize app so you always have everything in one place.",
     features: [
-      "Customized programming",
-      "Real-time form coaching",
+      "Customized programming via Trainerize",
+      "Real-time form coaching & corrections",
       "At your home or Jordyn's gym",
-      "Progress tracking & adjustments",
+      "24/7 messaging access to Jordyn",
     ],
     featured: false,
   },
@@ -30,12 +30,12 @@ const services = [
     title: "Online Coaching",
     subtitle: "Train From Anywhere",
     description:
-      "Get expert programming, check-ins, and support no matter where you are. Jordyn's primary coaching format — fully customized plans delivered digitally with ongoing guidance and accountability.",
+      "Jordyn's primary coaching format — fully customized programming and support delivered through the Trainerize app, no matter where you are. You'll have your workouts, check-ins, and progress tracking all in one place, plus direct access to Jordyn whenever you need her.",
     features: [
-      "Weekly custom workout plans",
-      "Regular check-ins & feedback",
-      "Video form reviews",
-      "Available wherever you are",
+      "Custom programming via Trainerize",
+      "Regular check-ins & progress tracking",
+      "Video form reviews & feedback",
+      "Message Jordyn 24/7 — she'll answer ASAP",
     ],
     featured: true,
   },
@@ -46,15 +46,15 @@ const services = [
         <path d="M12 6v6l4 2" />
       </svg>
     ),
-    title: "Nutrition Guidance",
+    title: "Nutrition Guidance & Meal Plans",
     subtitle: "Fuel Your Body Right",
     description:
-      "Customized meal plans and practical nutrition strategies built around your lifestyle and goals. Learn how to fuel your performance, support recovery, and build habits that last.",
+      "Personalized meal plans and practical nutrition strategies built around your lifestyle, goals, and body. Delivered through Trainerize alongside your training, so your food and fitness work together seamlessly. Learn to fuel your performance, support recovery, and build habits that actually stick.",
     features: [
-      "Personalized meal plans",
-      "Macro guidance & education",
-      "Fueling for performance",
-      "Sustainable habits",
+      "Custom meal plans via Trainerize",
+      "Macro guidance & nutrition education",
+      "Fueling strategies for performance",
+      "Sustainable, lifestyle-based habits",
     ],
     featured: false,
   },

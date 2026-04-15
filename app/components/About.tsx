@@ -8,7 +8,7 @@ export default function About() {
     {
       icon: "🤸",
       title: "10-Year Gymnast",
-      desc: "Competitive gymnastics, cheer & dance background",
+      desc: "Competitive gymnastics & cheer background",
     },
     {
       icon: "💪",
@@ -16,9 +16,9 @@ export default function About() {
       desc: "Niche focus on strength & body composition",
     },
     {
-      icon: "🥗",
-      title: "Nutrition Guidance",
-      desc: "Customized meal plans & fueling strategies",
+      icon: "❤️",
+      title: "CPR & AED Certified",
+      desc: "Trained in emergency response & client safety",
     },
   ];
 
@@ -150,28 +150,38 @@ export default function About() {
               className="flex flex-col gap-4"
             >
               <p>
-                I&apos;m a certified personal trainer from Queen Creek, Arizona with
-                a passion for helping people feel stronger, healthier, and more
-                confident. Fitness has been part of my life since I can
-                remember — I spent 10 years as a gymnast while competing in
-                cheer and dance, which gave me a deep foundation in movement,
-                body awareness, and discipline.
+                I&apos;m a certified personal trainer from Queen Creek, Arizona
+                with a deep passion for helping people feel stronger, healthier,
+                and more confident in their own skin. Fitness has been a part of
+                my life for as long as I can remember — I spent 10 years as a
+                competitive gymnast while also competing in cheer, which gave me
+                a strong foundation in movement, body awareness, and the kind of
+                discipline that carries over into everything I do.
               </p>
               <p>
-                At 17, I discovered strength training and never looked back.
-                Since then, I&apos;ve grown my expertise through formal education at
-                the{" "}
+                At 17, I fell in love with strength training and quickly realized
+                how much I wanted to share that with others. I went on to earn my
+                certification from the{" "}
                 <span style={{ color: "#c8956c" }}>
                   National Personal Training Institute of Arizona
                 </span>
-                , hands-on experience, and mentorships focused on training the
-                body effectively and fueling it properly.
+                , where I&apos;m incredibly grateful for the knowledge and
+                mentorship of my instructors{" "}
+                <span style={{ color: "#c8956c" }}>
+                  Travis Wapelhorst and Chris James
+                </span>
+                . They taught me everything I know, and their guidance shaped the
+                coach I am today.
               </p>
               <p>
                 My approach is holistic — I care about your physical strength,
-                nutrition, mindset, energy, and lifestyle. My goal is to help
-                you build sustainable habits and become the strongest, most
-                aligned version of yourself.
+                nutrition, mindset, energy, and lifestyle. All of my clients
+                train through{" "}
+                <span style={{ color: "#c8956c" }}>Trainerize</span>, a
+                professional coaching app where I deliver your custom workouts,
+                meal plans, and check-ins — and where you can message me
+                anytime, 24/7. My goal is to help you build sustainable habits
+                and become the strongest, most aligned version of yourself.
               </p>
             </div>
 
