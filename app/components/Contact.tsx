@@ -24,7 +24,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\nGoal: ${form.goal}\n\nMessage:\n${form.message}`
     );
-    window.open(`mailto:your@email.com?subject=${subject}&body=${body}`);
+    window.open(`mailto:Jordyn.grizzle@gmail.com?subject=${subject}&body=${body}`);
     setSubmitted(true);
   };
 
@@ -102,6 +102,30 @@ export default function Contact() {
 
             {/* Contact methods */}
             <div className="flex flex-col gap-4">
+              <a
+                href="mailto:Jordyn.grizzle@gmail.com"
+                className="card-hover flex items-center gap-4 p-5 rounded-xl"
+                style={{ background: "#1a1a1a", border: "1px solid #2a2a2a" }}
+              >
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(200, 149, 108, 0.12)", color: "#c8956c" }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <p style={{ fontSize: "0.72rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#c8956c", marginBottom: "0.15rem", fontWeight: 600 }}>
+                    Email
+                  </p>
+                  <p style={{ fontSize: "0.95rem", color: "#f5f0eb", fontWeight: 500 }}>
+                    Jordyn.grizzle@gmail.com
+                  </p>
+                </div>
+              </a>
+
               <a
                 href="https://instagram.com/jordyn.grizzle"
                 target="_blank"
@@ -299,7 +323,14 @@ export default function Contact() {
                     lineHeight: 1.6,
                   }}
                 >
-                  You can also DM on Instagram{" "}
+                  You can also email{" "}
+                  <a
+                    href="mailto:Jordyn.grizzle@gmail.com"
+                    style={{ color: "#c8956c" }}
+                  >
+                    Jordyn.grizzle@gmail.com
+                  </a>{" "}
+                  or DM on Instagram{" "}
                   <a
                     href="https://instagram.com/jordyn.grizzle"
                     target="_blank"
@@ -307,8 +338,7 @@ export default function Contact() {
                     style={{ color: "#c8956c" }}
                   >
                     @jordyn.grizzle
-                  </a>{" "}
-                  for a faster response.
+                  </a>.
                 </p>
               </form>
             )}
