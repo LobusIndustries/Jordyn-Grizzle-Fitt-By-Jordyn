@@ -149,11 +149,11 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
+        <div className="grid md:grid-cols-2 gap-6">
+          {services.map((service, index) => (
             <div
               key={service.title}
-              className="card-hover relative rounded-2xl p-7 flex flex-col"
+              className={`card-hover relative rounded-2xl p-7 flex flex-col${index === 4 ? " md:col-span-2 lg:max-w-2xl lg:mx-auto lg:w-full" : ""}`}
               style={{
                 background: service.featured
                   ? "linear-gradient(135deg, rgba(200, 149, 108, 0.12), rgba(200, 149, 108, 0.04))"
