@@ -65,8 +65,14 @@ export default function Footer() {
           </nav>
 
           {/* Social */}
+          <div className="flex flex-col gap-2">
+          {[
+            { handle: "@jordyn.fitt", url: "https://instagram.com/jordyn.fitt" },
+            { handle: "@jordyn.grizzle", url: "https://instagram.com/jordyn.grizzle" },
+          ].map((ig) => (
           <a
-            href="https://instagram.com/jordyn.grizzle"
+            key={ig.handle}
+            href={ig.url}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
@@ -83,8 +89,10 @@ export default function Footer() {
               <circle cx="12" cy="12" r="4" />
               <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
             </svg>
-            @jordyn.grizzle
+            {ig.handle}
           </a>
+          ))}
+          </div>
         </div>
 
         <div

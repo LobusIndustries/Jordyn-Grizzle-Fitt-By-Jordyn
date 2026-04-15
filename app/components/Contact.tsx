@@ -131,6 +131,33 @@ export default function Contact() {
               </a>
 
               <a
+                href="https://instagram.com/jordyn.fitt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card-hover flex items-center gap-4 p-5 rounded-xl"
+                style={{ background: "#1a1a1a", border: "1px solid #2a2a2a" }}
+              >
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(200, 149, 108, 0.12)", color: "#c8956c" }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                </div>
+                <div>
+                  <p style={{ fontSize: "0.72rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#c8956c", marginBottom: "0.15rem", fontWeight: 600 }}>
+                    Instagram · Fitness
+                  </p>
+                  <p style={{ fontSize: "0.95rem", color: "#f5f0eb", fontWeight: 500 }}>
+                    @jordyn.fitt
+                  </p>
+                </div>
+              </a>
+
+              <a
                 href="https://instagram.com/jordyn.grizzle"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -149,7 +176,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p style={{ fontSize: "0.72rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#c8956c", marginBottom: "0.15rem", fontWeight: 600 }}>
-                    Instagram
+                    Instagram · Personal
                   </p>
                   <p style={{ fontSize: "0.95rem", color: "#f5f0eb", fontWeight: 500 }}>
                     @jordyn.grizzle
@@ -328,19 +355,14 @@ export default function Contact() {
                   }}
                 >
                   You can also email{" "}
-                  <a
-                    href="mailto:Jordyn.grizzle@gmail.com"
-                    style={{ color: "#c8956c" }}
-                  >
+                  <a href="mailto:Jordyn.grizzle@gmail.com" style={{ color: "#c8956c" }}>
                     Jordyn.grizzle@gmail.com
                   </a>{" "}
                   or DM on Instagram{" "}
-                  <a
-                    href="https://instagram.com/jordyn.grizzle"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#c8956c" }}
-                  >
+                  <a href="https://instagram.com/jordyn.fitt" target="_blank" rel="noopener noreferrer" style={{ color: "#c8956c" }}>
+                    @jordyn.fitt
+                  </a>{" "}or{" "}
+                  <a href="https://instagram.com/jordyn.grizzle" target="_blank" rel="noopener noreferrer" style={{ color: "#c8956c" }}>
                     @jordyn.grizzle
                   </a>.
                 </p>
