@@ -17,15 +17,19 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Encode form data for Formspree or simple mailto
-    const subject = encodeURIComponent(`New Inquiry from ${form.name} - Fitt By Jordyn`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nGoal: ${form.goal}\n\nMessage:\n${form.message}`
-    );
-    window.open(`mailto:Jordyn.grizzle@gmail.com?subject=${subject}&body=${body}`);
-    setSubmitted(true);
+    const res = await fetch("https://formspree.io/f/xkokopzw", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        name: form.name,
+        email: form.email,
+        goal: form.goal,
+        message: form.message,
+      }),
+    });
+    if (res.ok) setSubmitted(true);
   };
 
   const inputStyle: React.CSSProperties = {
