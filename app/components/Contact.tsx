@@ -97,12 +97,26 @@ export default function Contact() {
                 color: "rgba(245, 240, 235, 0.55)",
                 lineHeight: 1.9,
                 maxWidth: "400px",
-                marginBottom: "2.5rem",
+                marginBottom: "1.5rem",
               }}
             >
               Whether you&apos;re brand new to training or looking to level up,
               reach out and let&apos;s talk about what&apos;s possible for you.
             </p>
+            <div
+              className="flex items-start gap-3 rounded-xl p-4 mb-6"
+              style={{
+                background: "rgba(200, 149, 108, 0.07)",
+                border: "1px solid rgba(200, 149, 108, 0.2)",
+                maxWidth: "400px",
+              }}
+            >
+              <span style={{ fontSize: "1.1rem", marginTop: "1px" }}>💬</span>
+              <p style={{ fontSize: "0.88rem", color: "rgba(245, 240, 235, 0.6)", lineHeight: 1.7 }}>
+                Have questions about pricing or which service is right for you?
+                Fill out the form and Jordyn will get back to you with all the details.
+              </p>
+            </div>
 
             {/* Contact methods */}
             <div className="flex flex-col gap-4">
