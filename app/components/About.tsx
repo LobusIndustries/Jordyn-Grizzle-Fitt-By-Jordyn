@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   const highlights = [
     {
@@ -38,33 +40,14 @@ export default function About() {
                 margin: "0 auto",
               }}
             >
-              {/* Placeholder photo area */}
-              <div
-                className="absolute inset-0 flex flex-col items-center justify-center gap-4"
-                style={{ color: "rgba(200, 149, 108, 0.3)" }}
-              >
-                <svg
-                  width="64"
-                  height="64"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                >
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <p
-                  style={{
-                    fontSize: "0.75rem",
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    color: "rgba(200, 149, 108, 0.35)",
-                  }}
-                >
-                  Add Your Photo Here
-                </p>
-              </div>
+              {/* Photo */}
+              <Image
+                src="/jordyn-about.jpg"
+                alt="Jordyn Grizzle — NPTI Certified Personal Trainer"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center top" }}
+                priority
+              />
 
               {/* Decorative corner accent */}
               <div
