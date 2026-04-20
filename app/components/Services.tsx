@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const services = [
   {
     icon: (
@@ -260,6 +262,31 @@ export default function Services() {
           <a href="#contact" className="btn-primary">
             Ready to Get Started?
           </a>
+        </div>
+
+        {/* NPTI Photo */}
+        <div className="mt-16 relative rounded-2xl overflow-hidden" style={{ maxWidth: "800px", margin: "4rem auto 0" }}>
+          <Image
+            src="/jordyn-npti.jpg"
+            alt="Jordyn Grizzle with NPTI instructors Travis Wapelhorst and Chris James"
+            width={1344}
+            height={685}
+            style={{ width: "100%", height: "auto", borderRadius: "1rem" }}
+          />
+          <div
+            className="absolute bottom-0 left-0 right-0 px-6 py-4"
+            style={{
+              background: "linear-gradient(to top, rgba(13,13,13,0.85), transparent)",
+              borderBottomLeftRadius: "1rem",
+              borderBottomRightRadius: "1rem",
+            }}
+          >
+            <p style={{ fontSize: "0.78rem", color: "rgba(245,240,235,0.7)", textAlign: "center", letterSpacing: "0.05em" }}>
+              Jordyn with her NPTI instructors{" "}
+              <span style={{ color: "#c8956c" }}>Travis Wapelhorst</span> &{" "}
+              <span style={{ color: "#c8956c" }}>Chris James</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
