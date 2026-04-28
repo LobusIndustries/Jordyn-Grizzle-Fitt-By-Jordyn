@@ -10,26 +10,41 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    if (error) setError(null);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const res = await fetch("https://formspree.io/f/xkokopzw", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({
-        name: form.name,
-        email: form.email,
-        goal: form.goal,
-        message: form.message,
-      }),
-    });
-    if (res.ok) setSubmitted(true);
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("https://formspree.io/f/xkokopzw", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          goal: form.goal,
+          message: form.message,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try emailing Jordyn directly.");
+      }
+    } catch {
+      setError("Unable to send — please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputStyle: React.CSSProperties = {
@@ -356,8 +371,28 @@ export default function Contact() {
                   />
                 </div>
 
-                <button type="submit" className="btn-primary text-center w-full">
-                  Send Message
+                {error && (
+                  <p
+                    style={{
+                      fontSize: "0.85rem",
+                      color: "#e88a8a",
+                      background: "rgba(232, 138, 138, 0.08)",
+                      border: "1px solid rgba(232, 138, 138, 0.2)",
+                      borderRadius: "8px",
+                      padding: "0.75rem 1rem",
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    {error}
+                  </p>
+                )}
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="btn-primary text-center w-full"
+                  style={{ opacity: loading ? 0.7 : 1, cursor: loading ? "not-allowed" : "pointer" }}
+                >
+                  {loading ? "Sending…" : "Send Message"}
                 </button>
 
                 <p

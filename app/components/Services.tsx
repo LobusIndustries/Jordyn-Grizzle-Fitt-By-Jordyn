@@ -271,6 +271,8 @@ export default function Services() {
             alt="Jordyn Grizzle with NPTI instructors Travis Wapelhorst and Chris James"
             width={1344}
             height={685}
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, 800px"
             style={{ width: "100%", height: "auto", borderRadius: "1rem" }}
           />
           <div

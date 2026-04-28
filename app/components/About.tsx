@@ -45,6 +45,7 @@ export default function About() {
                 src="/jordyn-about.jpg"
                 alt="Jordyn Grizzle — NPTI Certified Personal Trainer"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 460px"
                 style={{ objectFit: "cover", objectPosition: "center top" }}
                 priority
               />
